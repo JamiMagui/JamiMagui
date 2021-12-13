@@ -3,7 +3,16 @@ body {
   padding: 0;
   background: #14495e;
 }
-
+.cornea {
+  width: 60px;
+  height: px;
+  background: #000;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border-radius: 50%;
+}
 .eyes {
   position: absolute;
   top: 50%;
@@ -31,3 +40,4 @@ body {
   transform: translate(-50%, -50%);
   border-radius: 50%;
 }
+

@@ -4,9 +4,18 @@
     body {
       margin: 0;
       padding: 0;
-      background: #14495e;
+      background: #6f057d;
     }
-
+    .cornea {
+  width: 60px;
+  height: px;
+  background: #000;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border-radius: 50%;
+}
     .eyes {
       position: absolute;
       top: 50%;
@@ -27,22 +36,27 @@
     .ball {
       width: 80px;
       height: 80px;
-      background: #000;
+      background: rgb(17, 113, 2);
       position: absolute;
       top: 50%;
       left: 50%;
       transform: translate(-50%, -50%);
       border-radius: 50%;
     }
+
   </style>
 
   <body>
     <div class="eyes">
       <div class="eye">
-        <div class="ball"></div>
+        <div class="ball">
+          <div class="cornea"></div>
+        </div>
       </div>
       <div class="eye">
-        <div class="ball"></div>
+        <div class="ball">
+          <div class="cornea"></div>
+        </div>
       </div>
     </div>
   </body>
