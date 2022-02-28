@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -11,7 +12,7 @@
 
 <nav class="navbar navbar-expand-lg navbar-light bg-light">
     <div class="container-fluid">
-      <a class="navbar-brand" href="#">Navigation</a>
+      <a class="navbar-brand" href="#">Jamie Maguire</a>
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
@@ -21,14 +22,14 @@
             <a class="nav-link active" aria-current="page" onclick="loadPage('index.html')" href="index.html">Home</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" onclick="loadPage('AboutMe.html')"" href="#AboutMe">About Me</a>
+            <a class="nav-link" onclick="loadPage('AboutMe.html')" href="#AboutMe">About Me</a>
           </li>
           <li class="nav-item dropdown">
             <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
               Projects
             </a>
             <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-              <li><a class="dropdown-item" href="hangman.html">Hangman</a></li>
+              <li><a class="dropdown-item" onclick="loadPage('Hangman.html')" href="#Hangman">Hangman</a></li>
               <li><a class="dropdown-item" href="MapExercise/mapanimation.html">Map</a></li>
               <li><a class="dropdown-item" href="PacMen Exercise/starter.html">PacMan</a></li>
               <li><a class="dropdown-item" href="eye-exercise/eyes.html">Following Eyes</a><li>
@@ -39,7 +40,7 @@
             </ul>
           </li>
           <li class="nav-item">
-            <a class="nav-link active" href="Contact.html">Contact</a>
+            <a class="nav-link active" onclick="loadPage('Contact.html')" href="#Contact">Contact</a>
           </li>
         </ul>
       </div>
@@ -53,13 +54,7 @@
     font-size: 1.5em; 
   }
 </style>
-<div class="container" style="margin-top: 20px">
-  <a href="#AboutMe" class="text-primary">Sign In</a>, 
-  <a href="#blog" class="text-primary">Blog</a>, 
-  <a href="#pricing" class="text-primary">Pricing</a>  
-  <div id="content"></div>
 
-</div>
 
 <script>
 
