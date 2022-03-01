@@ -66,6 +66,7 @@ isAlive = true;
   password3.textContent = '' 
   password4.textContent = '' 
   isAlive = false;
+  alert("please choose a number between 5 and 20")
 }}
 
 function copyToClipboard1(elementId) {
