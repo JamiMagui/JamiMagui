@@ -4,6 +4,7 @@ let password1 = document.getElementById("passwords1")
 let password2 = document.getElementById("passwords2")
 let password3 = document.getElementById("passwords3")
 let password4 = document.getElementById("passwords4")
+
 isAlive = false
 
 function getRandomItem() {
@@ -48,7 +49,9 @@ function getRandomPassword() {
     password2.textContent = '' 
     password3.textContent = '' 
     password4.textContent = '' 
-    for (let i = 0; i < 12; i++) {
+    console.log('Generating random passwords...')
+    let b = document.getElementById("charactersBox").value;
+    for (let i = 0; i < b; i++) {
         getRandomItem(char);
         getRandomItem2(char);
         getRandomItem3(char);
