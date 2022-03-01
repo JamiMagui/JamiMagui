@@ -12,14 +12,14 @@
 
 <nav class="navbar navbar-expand-lg navbar-light bg-light">
     <div class="container-fluid">
-      <a class="navbar-brand" href="#">Jamie Maguire</a>
+      <a class="navbar-brand" onclick="loadPage('Home.html')" aria-current="page" href="#home">Jamie Maguire</a>
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
       <div class="collapse navbar-collapse" id="navbarSupportedContent">
         <ul class="navbar-nav me-auto mb-2 mb-lg-0">
           <li class="nav-item">
-            <a class="nav-link active" aria-current="page" onclick="loadPage('index.html')" href="index.html">Home</a>
+            <a class="nav-link active" aria-current="page" onclick="loadPage('Home.html')" href="#home">Home</a>
           </li>
           <li class="nav-item">
             <a class="nav-link" onclick="loadPage('AboutMe.html')" href="#AboutMe">About Me</a>
@@ -29,14 +29,14 @@
               Projects
             </a>
             <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-              <li><a class="dropdown-item" onclick="loadPage('Hangman.html')" href="#Hangman">Hangman</a></li>
-              <li><a class="dropdown-item" onclick="loadPage('MapExercise/mapanimation.html')" href="#Map">Map</a></li>
-              <li><a class="dropdown-item" onclick="loadPage('PacMen Exercise/starter.html')" href="#PacMan">PacMan</a></li>
-              <li><a class="dropdown-item" onclick="loadPage('eye-exercise/eyes.html')" href="#FollowingEyes">Following Eyes</a><li>
-              <li><a class="dropdown-item" onclick="loadPage('PassengerCounter/index.html')" href="#Passenger">Passenger Counter</a><li>
-              <li><a class="dropdown-item" onclick="loadPage('Styling-ToDo-List/index.html')" href="ToDo">To-Do List</a><li>
-                <li><a class="dropdown-item" onclick="loadPage('Styling-ToDo-List/ATM.standalone.html')" href="ATM">Fake ATM</a><li>
-                  <li><a class="dropdown-item" onclick="loadPage('PasswordGenerator/index.html')" href="PasswordGen">Password Generator</a><li>
+              <li><a class="dropdown-item" href="hangman.html">Hangman</a></li>
+              <li><a class="dropdown-item" href="MapExercise/mapanimation.html">Map</a></li>
+              <li><a class="dropdown-item" href="PacMen Exercise/starter.html">PacMan</a></li>
+              <li><a class="dropdown-item" href="eye-exercise/bigEyes.html">Following Eyes</a><li>
+              <li><a class="dropdown-item" href="PassengerCounter/index.html">Passenger Counter</a><li>
+              <li><a class="dropdown-item" href="Styling-ToDo-List/index.html">To-Do List</a><li>
+              <li><a class="dropdown-item" href="ATM/standalone.html">Fake ATM</a><li>
+              <li><a class="dropdown-item" href="PasswordGenerator/index.html">Password Generator</a><li>
             </ul>
           </li>
           <li class="nav-item">
@@ -48,33 +48,22 @@
   </nav>
   <!-- JavaScript Bundle with Popper -->
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
-</body>
-<style>
-  .text-primary{
-    font-size: 1.5em; 
-  }
-</style>
 
 
+<div id="content"></div>
 <script>
 
-    async function loadPage(){
-        console.log(location.hash);
-        let page      = location.hash.replace('#', '');
+async function loadPage(page){
         const res     = await fetch(page);
         const content = await res.text();
         const element = document.getElementById('content');
         element.innerHTML = content;
-    };            
-
-    window.addEventListener('hashchange', loadPage);    
+    };        
   
 </script>
 <link rel="stylesheet" href="style.css">
 
-<center><h1>Jamie Maguire</h1>
 
-  <iframe width="560" height="315" src="https://www.youtube.com/embed/hSyxR_Jv9SM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
  
 
 </body>
