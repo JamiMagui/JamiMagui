@@ -48,7 +48,7 @@ function getRandomPassword() {
     password2.textContent = '' 
     password3.textContent = '' 
     password4.textContent = '' 
-    for (let i = 0; i < 8; i++) {
+    for (let i = 0; i < 12; i++) {
         getRandomItem(char);
         getRandomItem2(char);
         getRandomItem3(char);
