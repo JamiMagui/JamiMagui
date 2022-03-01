@@ -60,6 +60,12 @@ function getRandomPassword() {
         getRandomItem4(char);
 }
 isAlive = true;
+} else {
+  password1.textContent = '' 
+  password2.textContent = '' 
+  password3.textContent = '' 
+  password4.textContent = '' 
+  isAlive = false;
 }}
 
 function copyToClipboard1(elementId) {
