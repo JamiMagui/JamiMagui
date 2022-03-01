@@ -111,7 +111,7 @@ hr {
     border: 1px solid #2F3E53;
 }
 
-button {
+#button {
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -201,6 +201,93 @@ button {
 }
 
 #passwords4 {
+    position: absolute;
+    width: 211px;
+    height: 39px;
+    left: 287px;
+    top: 465px;
+    
+    background: #273549;
+    border-radius: 6px;
+    font-family: sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 32px;
+    /* identical to box height, or 200% */
+
+    text-align: center;
+
+    color: #55F991;
+}
+
+#copy1 {
+    position: absolute;
+    width: 211px;
+    height: 39px;
+    left: 52px;
+    top: 414px;
+
+    background: #273549;
+    border-radius: 0px;
+
+    font-family: sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 32px;
+    /* identical to box height, or 200% */
+
+    text-align: center;
+
+    color: #55F991;
+}
+
+#copy2 {
+    position: absolute;
+    width: 211px;
+    height: 39px;
+    left: 287px;
+    top: 399px;
+
+    background: #273549;
+    border-radius: 6px;
+
+    font-family: sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 32px;
+    /* identical to box height, or 200% */
+
+    text-align: center;
+
+    color: #55F991;
+}
+
+#copy3 {
+    position: absolute;
+    width: 211px;
+    height: 39px;
+    left: 52px;
+    top: 465px;
+    
+    background: #273549;
+    border-radius: 6px;
+
+    font-family: sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 32px;
+    /* identical to box height, or 200% */
+
+    text-align: center;
+
+    color: #55F991;
+}
+
+#copy4 {
     position: absolute;
     width: 211px;
     height: 39px;

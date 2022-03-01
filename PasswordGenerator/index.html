@@ -11,15 +11,13 @@
         <button id="button" onclick="getRandomPassword()"><img src="icon.png">Generate Passwords</button>
         <hr></hr>
 
-        <p id="passwords1" input type="text" value='passwords1'>
 
-        <p id="passwords2" input type="text">        
-        </p>
-        <p id="passwords3" input type="text">        
-        </p>
-        <p id="passwords4" input type="text">       
-        </p>
-        
+
+        <button id="passwords1" input type="text" value='passwords1' id="copy1" onclick="copyToClipboard1('#passwords1')" title="press to copy"></button>
+        <button id="passwords2" input type="text" id="copy2" onclick="copyToClipboard2('#passwords2')" title="press to copy"></button>
+        <button id="passwords3" input type="text" id="copy3" onclick="copyToClipboard3('#passwords3')" title="press to copy"></button>
+        <button id="passwords4" input type="text" id="copy4" onclick="copyToClipboard4('#passwords4')" title="press to copy"></button>        
+
         <script src="index.js"></script>
 
     </body>
