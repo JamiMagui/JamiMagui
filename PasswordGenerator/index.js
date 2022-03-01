@@ -45,6 +45,8 @@ function getRandomItem4() {
 
 
 function getRandomPassword() {
+  let b = document.getElementById("charactersBox").value;
+  if (b > 4 && b < 21) {
     password1.textContent = '' 
     password2.textContent = '' 
     password3.textContent = '' 
@@ -58,7 +60,7 @@ function getRandomPassword() {
         getRandomItem4(char);
 }
 isAlive = true;
-}
+}}
 
 function copyToClipboard1(elementId) {
     if(isAlive === true) {var aux = document.createElement("input");
