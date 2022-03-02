@@ -77,6 +77,7 @@ function copyToClipboard1(elementId) {
     document.execCommand("copy");
     document.body.removeChild(aux);
     alert("your new password has been copied to the clipboard")
+    console.log(document.getElementById("passwords1").innerHTML)
   }}
 function copyToClipboard2(elementId) {
     if(isAlive === true) {var aux = document.createElement("input");
@@ -86,6 +87,7 @@ function copyToClipboard2(elementId) {
     document.execCommand("copy");
     document.body.removeChild(aux);
     alert("your new password has been copied to the clipboard")
+    console.log(document.getElementById("passwords2").innerHTML)
   }}
 function copyToClipboard3(elementId) {
     if(isAlive === true) {var aux = document.createElement("input");
@@ -95,6 +97,7 @@ function copyToClipboard3(elementId) {
     document.execCommand("copy");
     document.body.removeChild(aux);
     alert("your new password has been copied to the clipboard")
+    console.log(document.getElementById("passwords3").innerHTML)
   }}
 function copyToClipboard4(elementId) {
     if(isAlive === true) {var aux = document.createElement("input");
@@ -104,6 +107,7 @@ function copyToClipboard4(elementId) {
     document.execCommand("copy");
     document.body.removeChild(aux);
     alert("your new password has been copied to the clipboard")
+    console.log(document.getElementById("passwords4").innerHTML)
   }}
 
 
